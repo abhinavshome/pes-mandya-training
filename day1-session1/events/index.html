@@ -1,0 +1,38 @@
+<html>
+    <head></head>
+    <body>
+        <div 
+            style="background-color: red; width: 100px; height: 100px;" 
+            id="box" 
+            onmouseenter="handleMouseEnter()" 
+            onmouseleave="handleMouseLeave()"
+            ondblclick="handleDoubleClick()"
+            >
+        </div>
+
+        </div>
+        <button onclick="alert('Hello')">Click</button>
+        <input type="text" onkeyup="handleKeyPress(event)"/>
+        <script>
+            function handleInput(e) {
+                console.log('input changed', e.target.value);
+            }
+
+            function handleKeyPress(e) {
+                console.log('key down fired', e);
+            }
+
+            function handleMouseEnter() {
+                document.getElementById('box').innerHTML = 'Mouse Entered';
+            }
+
+            function handleMouseLeave() {
+                document.getElementById('box').innerHTML = '';
+            }
+
+            function handleDoubleClick() {
+                document.getElementById('box').innerHTML = 'Double Clicked';
+            }
+        </script>
+    </body>
+</html>

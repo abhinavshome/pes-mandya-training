@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+        <form onsubmit="handleSubmit(event)" onreset="handleReset(event)">
+            <div>
+                Username:
+                <input type="text" name="username"/>
+            </div>
+            <div>
+                Password:
+                <input type="password" name="password"/>
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+        <script>
+            function handleSubmit(e) {
+                e.preventDefault();
+                const formData = new FormData(e.target);
+                const username = formData.get('username');
+                const password = formData.get('password');
+                console.log(username, password);
+            }
+
+            function handleReset(e) {
+                console.log(e);
+            }
+        </script>
+    </body>
+</html>
