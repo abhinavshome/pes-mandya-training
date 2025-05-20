@@ -1,0 +1,12 @@
+.on {
+  background-color: green;
+}
+
+.off {
+  background-color: red;
+}
+
+.switch {
+  width: 50px;
+  height: 50px;
+}

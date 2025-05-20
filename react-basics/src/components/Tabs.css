@@ -1,0 +1,13 @@
+.tabs > span {
+    background-color: gray;
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-right: 1px solid blueviolet;
+}
+
+.selected {
+    background-color: blue !important;
+    color: white;
+}
